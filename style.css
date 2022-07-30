@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+    --Cyan: hsl(179, 62%, 43%);
+    --Cyan2: hsl(179, 50%, 54%);
+    --BrightYellow: hsl(71, 73%, 54%);
+    --LightGray: hsl(204, 43%, 93%);
+    --GrayishBlue: hsl(218, 22%, 67%);
+}
+
+*{
+    margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	text-decoration:none;
+	color:inherit;
+	background-color:transparent;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--LightGray);
+    font-size: 16px;
+
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(2, 315px);
+    grid-template-rows: repeat(2, auto);
+    align-self: center;
+    border-radius:10px ;
+    overflow: hidden;
+    color: white;
+    box-shadow: 1px 4px 30px -10px rgb(94, 94, 94);
+}
+
+
+main {
+    grid-column: 1/3;
+    background-color: white;
+    padding: 40px 50px 40px 40px;   
+}
+
+main h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--Cyan);
+    margin-bottom: 25px;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+main h2 {
+    color: var(--BrightYellow);
+    margin-bottom: 15px;
+}
+
+main p {
+    color: var(--GrayishBlue);
+    line-height: 1.5;
+}
+
+.section {
+    font-size: 15px;
+    padding: 40px;
+    background-color: var(--Cyan);
+}
+
+.section div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 7px;
+}
+
+.section div .number {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.section div .month {
+    color: var(--LightGray);
+}
+
+.section .parrafo {
+    padding-bottom: 30px;
+}
+ 
+button {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    background-color: var(--BrightYellow);
+    border-radius: 5px;
+    box-shadow: 1px 4px 30px -10px rgb(94, 94, 94);
+}
+
+.two{
+    background-color: var(--Cyan2);
+}
+
+.two p {
+    color: var(--LightGray);
+    line-height: 1.3;
+}
+
+@media (max-width: 380px) {
+    .card {
+        background-color: black;
+        grid-template-columns: repeat(1, 315px);
+        grid-template-rows: repeat(3, auto);
+    }
+
+    main {
+        grid-column: 1/2;
+    }
+}
