@@ -120,7 +120,7 @@ button {
     line-height: 1.3;
 }
 
-@media (max-width: 380px) {
+@media (max-width: 600px) {
     .card {
         background-color: black;
         grid-template-columns: repeat(1, 315px);
