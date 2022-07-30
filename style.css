@@ -26,19 +26,17 @@
 
 body {
     font-family: 'Karla', sans-serif;
+    background-color: var(--LightGray);
     display: flex;
     justify-content: center;
-    height: 100vh;
-    background-color: var(--LightGray);
-    font-size: 16px;
-
+    align-items: center ;
+    min-height: 100vh;
 }
 
 .card {
     display: grid;
     grid-template-columns: repeat(1, 315px);
     grid-template-rows: repeat(3, auto);
-    align-self: center;
     border-radius:10px ;
     overflow: hidden;
     color: white;
@@ -124,6 +122,7 @@ button {
     .card {
         grid-template-columns: repeat(2, 315px);
         grid-template-rows: repeat(3, auto);
+        margin: none;
     }
 
     main {
